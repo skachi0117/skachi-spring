@@ -79,6 +79,7 @@ public class DemoController {
 		return result;
 	}
 	
+	@CrossOrigin
 	@GetMapping("/test2")
 	public Test check() {
 		Test test = new Test();
