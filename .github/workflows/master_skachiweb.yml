@@ -50,4 +50,4 @@ jobs:
           app-name: 'skachiweb'
           slot-name: 'Production'
           package: '*.jar'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6CDF2D09150246AB88C424A329531916 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_356F9BC838624A798609D17799E1259A }}
