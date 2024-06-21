@@ -8,28 +8,23 @@
 </head>
 
 <body>
-	<!--<form action="/test" method="post">
+	<form action="/test" method="post">
 	<input type="text" name="input">
 	<input type="submit" value="送信">
-	</form>-->
+	</form>-
 	<button id="fetchButton">Fetch Data</button>
 	<p>Fetched Data: <span id="dataDisplay"></span></p>
 	<script>
 		document.getElementById('fetchButton').addEventListener('click', () => {
 			//fetch('http://localhost:8080/test')
-			fetch('http://localhost:8080/test2')
+			fetch('https://skachiweb.azurewebsites.net/test')
 				.then(response => response.json())
 				.then(data => {
-					console.log(data);
+					document.getElementById('dataDisplay').textContent = data;
 				})
 				.catch(error => {
 					console.error('Error:', error);
 				});
-				/*	document.getElementById('dataDisplay').textContent = data;
-				})
-				.catch(error => {
-					console.error('Error:', error);
-				});*/
 		}); 
 	</script>
 </body>
