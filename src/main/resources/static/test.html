@@ -18,7 +18,7 @@
 		document.getElementById('fetchButton').addEventListener('click', () => {
 			//fetch('http://localhost:8080/test')
 			fetch('https://skachiweb.azurewebsites.net/test')
-				.then(response => response.json())
+				.then(response => response.text())
 				.then(data => {
 					document.getElementById('dataDisplay').textContent = data;
 				})
