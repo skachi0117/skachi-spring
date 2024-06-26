@@ -19,6 +19,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 
 @RestController
 public class DemoController {
+	
 	@CrossOrigin
 	@GetMapping("/test")
 	public String checkSentiment() {
